@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Sensor_Data_Aggregation_Board-rescue)(type Legacy)(uri ${KIPRJMOD}/Sensor_Data_Aggregation_Board-rescue.lib)(options "")(descr ""))
+  (lib (name Sensor_Data_Aggregation_Board-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Sensor_Data_Aggregation_Board-eagle-import.lib)(options "")(descr ""))
+)

@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# dk_Rectangular-Connectors-Headers-Male-Pins_B6B-XH-A_LF__SN_
+#
+DEF dk_Rectangular-Connectors-Headers-Male-Pins_B6B-XH-A_LF__SN_ U 0 40 Y Y 1 F N
+F0 "U" 0 -200 50 H V C CNN
+F1 "dk_Rectangular-Connectors-Headers-Male-Pins_B6B-XH-A_LF__SN_" 0 400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 300 0 -300 -100 0 1 0 f
+S -260 -45 -240 -65 1 1 0 F
+S -160 -45 -140 -65 1 1 0 F
+S -60 -45 -40 -65 1 1 0 F
+S 40 -45 60 -65 1 1 0 F
+S 140 -45 160 -65 1 1 0 F
+S 240 -45 260 -65 1 1 0 F
+X ~ 1 -250 100 100 D 50 50 1 1 P
+X ~ 2 -150 100 100 D 50 50 1 1 P
+X ~ 3 -50 100 100 D 50 50 1 1 P
+X ~ 4 50 100 100 D 50 50 1 1 P
+X ~ 5 150 100 100 D 50 50 1 1 P
+X ~ 6 250 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

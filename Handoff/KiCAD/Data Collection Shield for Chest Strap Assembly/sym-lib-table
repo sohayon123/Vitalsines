@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Distribution-Board-For-Data-Collection-rescue)(type Legacy)(uri "${KIPRJMOD}/Distribution Board For Data Collection-rescue.lib")(options "")(descr ""))
+)

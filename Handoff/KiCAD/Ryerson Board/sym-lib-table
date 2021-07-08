@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Ryerson-Board-rescue)(type Legacy)(uri "${KIPRJMOD}/Ryerson Board-rescue.lib")(options "")(descr ""))
+)

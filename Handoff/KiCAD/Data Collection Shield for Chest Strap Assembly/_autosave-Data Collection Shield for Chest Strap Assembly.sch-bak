@@ -1,0 +1,442 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Data Aggregation Board"
+Date "2021-02-18"
+Rev ""
+Comp "Vitalsines"
+Comment1 "Sasha Ohayon"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_DC-DC-Converters:MDS01L-12 U?
+U 1 1 602F2104
+P 3900 1050
+F 0 "U?" H 3900 1325 50  0000 C CNN
+F 1 "MDS01L-12" H 3900 1234 50  0000 C CNN
+F 2 "" H 3950 1050 50  0001 C CNN
+F 3 "" H 3950 1050 50  0001 C CNN
+	1    3900 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1000 2650 1000
+Wire Wire Line
+	900  1000 1100 1000
+$Comp
+L Device:C C?
+U 1 1 602F5F78
+P 1100 1250
+F 0 "C?" H 1215 1296 50  0000 L CNN
+F 1 "4.7uF/50V" H 1215 1205 50  0000 L CNN
+F 2 "" H 1138 1100 50  0001 C CNN
+F 3 "~" H 1100 1250 50  0001 C CNN
+	1    1100 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 602F7470
+P 2250 1000
+F 0 "L?" H 2250 1215 50  0000 C CNN
+F 1 "6.8uH" H 2250 1124 50  0000 C CNN
+F 2 "" H 2250 1000 50  0001 C CNN
+F 3 "~" H 2250 1000 50  0001 C CNN
+	1    2250 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1100 1100 1000
+Wire Wire Line
+	1850 1000 2000 1000
+Wire Wire Line
+	2650 1100 2650 1000
+Connection ~ 2650 1000
+Wire Wire Line
+	1850 1000 1850 1100
+$Comp
+L Device:R R?
+U 1 1 602FAE92
+P 1850 1250
+F 0 "R?" H 1920 1296 50  0000 L CNN
+F 1 "1k5" H 1920 1205 50  0000 L CNN
+F 2 "" V 1780 1250 50  0001 C CNN
+F 3 "~" H 1850 1250 50  0001 C CNN
+	1    1850 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 602FB691
+P 1850 1550
+F 0 "D?" V 1889 1432 50  0000 R CNN
+F 1 "GRN" V 1798 1432 50  0000 R CNN
+F 2 "" H 1850 1550 50  0001 C CNN
+F 3 "~" H 1850 1550 50  0001 C CNN
+	1    1850 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1100 1000 1850 1000
+Connection ~ 1100 1000
+Connection ~ 1850 1000
+$Comp
+L Device:C C?
+U 1 1 602FCF92
+P 2650 1250
+F 0 "C?" H 2765 1296 50  0000 L CNN
+F 1 "4.7uF/50V" H 2765 1205 50  0000 L CNN
+F 2 "" H 2688 1100 50  0001 C CNN
+F 3 "~" H 2650 1250 50  0001 C CNN
+	1    2650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1000 3550 1000
+Wire Wire Line
+	3550 1100 3350 1100
+Wire Wire Line
+	3350 1100 3350 1550
+Wire Wire Line
+	5000 1000 5000 1100
+$Comp
+L Device:C C?
+U 1 1 602FE22A
+P 5000 1250
+F 0 "C?" H 5115 1296 50  0000 L CNN
+F 1 "2.2uF" H 5115 1205 50  0000 L CNN
+F 2 "" H 5038 1100 50  0001 C CNN
+F 3 "~" H 5000 1250 50  0001 C CNN
+	1    5000 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MCP1804x-5002xDB U?
+U 1 1 602FF13B
+P 8050 1000
+F 0 "U?" H 8050 1242 50  0000 C CNN
+F 1 "MCP1804x-5002xDB" H 8050 1151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 8050 1200 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf" H 8050 1000 50  0001 C CNN
+	1    8050 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MCP1804x-A002xDB U?
+U 1 1 60301323
+P 6450 1000
+F 0 "U?" H 6450 1242 50  0000 C CNN
+F 1 "MCP1804x-A002xDB" H 6450 1151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6450 1200 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf" H 6450 1000 50  0001 C CNN
+	1    6450 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MCP1804x-3302xDB U?
+U 1 1 60304204
+P 9800 1000
+F 0 "U?" H 9800 1242 50  0000 C CNN
+F 1 "MCP1804x-3302xDB" H 9800 1151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 9800 1200 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf" H 9800 1000 50  0001 C CNN
+	1    9800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1000 5800 1000
+Wire Wire Line
+	5800 1000 5800 1100
+Connection ~ 5800 1000
+Wire Wire Line
+	5800 1000 6150 1000
+$Comp
+L Device:C C?
+U 1 1 6030568A
+P 5800 1250
+F 0 "C?" H 5915 1296 50  0000 L CNN
+F 1 "1uF" H 5915 1205 50  0000 L CNN
+F 2 "" H 5838 1100 50  0001 C CNN
+F 3 "~" H 5800 1250 50  0001 C CNN
+	1    5800 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1300 6450 1550
+Wire Wire Line
+	8350 1000 8700 1000
+Wire Wire Line
+	10850 1000 10850 1700
+Wire Wire Line
+	9800 1300 9800 1550
+Wire Wire Line
+	8050 1300 8050 1550
+Wire Wire Line
+	7450 1000 7450 1700
+Connection ~ 7450 1000
+Wire Wire Line
+	7450 1000 7750 1000
+Connection ~ 9300 1000
+Wire Wire Line
+	9300 1000 9500 1000
+Text GLabel 9300 1750 3    50   Input ~ 0
+5V
+Text GLabel 7450 1700 3    50   Input ~ 0
+10V
+Text GLabel 10850 1700 3    50   Input ~ 0
+3.3V
+Wire Wire Line
+	9300 1000 9300 1750
+Wire Wire Line
+	8700 1000 8700 1100
+Connection ~ 8700 1000
+Wire Wire Line
+	8700 1000 9300 1000
+$Comp
+L Device:CP C?
+U 1 1 602FD94C
+P 6900 1250
+F 0 "C?" H 7018 1296 50  0000 L CNN
+F 1 "47uF/16V" H 7018 1205 50  0000 L CNN
+F 2 "" H 6938 1100 50  0001 C CNN
+F 3 "~" H 6900 1250 50  0001 C CNN
+	1    6900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 602FE5DD
+P 8700 1250
+F 0 "C?" H 8818 1296 50  0000 L CNN
+F 1 "47uF/10V" H 8818 1205 50  0000 L CNN
+F 2 "" H 8738 1100 50  0001 C CNN
+F 3 "~" H 8700 1250 50  0001 C CNN
+	1    8700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 602FFD1E
+P 10250 1300
+F 0 "C?" H 10368 1346 50  0000 L CNN
+F 1 "10uF/10V" H 10368 1255 50  0000 L CNN
+F 2 "" H 10288 1150 50  0001 C CNN
+F 3 "~" H 10250 1300 50  0001 C CNN
+	1    10250 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1000 6900 1000
+Wire Wire Line
+	6900 1100 6900 1000
+Connection ~ 6900 1000
+Wire Wire Line
+	6900 1000 7450 1000
+Wire Wire Line
+	10100 1000 10250 1000
+Wire Wire Line
+	10250 1150 10250 1000
+Connection ~ 10250 1000
+Wire Wire Line
+	10250 1000 10850 1000
+Wire Wire Line
+	1850 1800 1850 1700
+Wire Wire Line
+	4250 950  4650 950 
+Wire Wire Line
+	4650 950  4650 1000
+Wire Wire Line
+	4650 1000 5000 1000
+Connection ~ 5000 1000
+Wire Wire Line
+	4400 1050 4250 1050
+Wire Wire Line
+	4400 1050 4400 1550
+NoConn ~ 4250 1150
+Text GLabel 1100 1400 3    50   Input ~ 0
+DGND
+Text GLabel 1850 1800 3    50   Input ~ 0
+DGND
+Text GLabel 2650 1400 3    50   Input ~ 0
+DGND
+Text GLabel 3350 1550 3    50   Input ~ 0
+DGND
+Text GLabel 4400 1550 3    50   Input ~ 0
+AGND
+Text GLabel 5000 1400 3    50   Input ~ 0
+AGND
+Text GLabel 5800 1400 3    50   Input ~ 0
+AGND
+Text GLabel 6450 1550 3    50   Input ~ 0
+AGND
+Text GLabel 6900 1400 3    50   Input ~ 0
+AGND
+Text GLabel 8050 1550 3    50   Input ~ 0
+AGND
+Text GLabel 8700 1400 3    50   Input ~ 0
+AGND
+Text GLabel 9800 1550 3    50   Input ~ 0
+AGND
+Text GLabel 10250 1450 3    50   Input ~ 0
+AGND
+Text GLabel 2100 2750 2    50   Input ~ 0
+CH0
+Text GLabel 1250 2750 0    50   Input ~ 0
+LA_ELEC
+Text GLabel 1250 2650 0    50   Input ~ 0
+RA_ELEC
+Wire Wire Line
+	1400 2750 1250 2750
+Wire Wire Line
+	1400 2650 1250 2650
+NoConn ~ 1400 2850
+NoConn ~ 1400 2550
+NoConn ~ 2100 2950
+NoConn ~ 2100 2850
+Text GLabel 2100 2650 2    50   Input ~ 0
+3.3V
+$Comp
+L Sensor_Touch:AD8232SF U?
+U 1 1 60305EC7
+P 1750 2700
+F 0 "U?" H 1750 3075 50  0000 C CNN
+F 1 "AD8232SF" H 1750 2984 50  0000 C CNN
+F 2 "" H 1750 2700 50  0001 C CNN
+F 3 "" H 1750 2700 50  0001 C CNN
+	1    1750 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2100 2550 2    50   Input ~ 0
+AGND
+Text GLabel 900  1000 0    50   Input ~ 0
+5V_IN
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:20PIN_HEADER U?
+U 1 1 60374D25
+P 10150 3250
+F 0 "U?" V 10241 3072 50  0000 R CNN
+F 1 "PINS 1 - 20 DAQ" V 9100 3500 50  0000 R CNN
+F 2 "" H 9600 3200 50  0001 C CNN
+F 3 "" H 9600 3200 50  0001 C CNN
+	1    10150 3250
+	0    -1   1    0   
+$EndComp
+Text GLabel 10100 2350 0    50   Input ~ 0
+CH0
+Text GLabel 10100 2450 0    50   Input ~ 0
+AGND
+Text GLabel 10100 2650 0    50   Input ~ 0
+AGND
+Text GLabel 10100 2850 0    50   Input ~ 0
+AGND
+Text GLabel 10100 3050 0    50   Input ~ 0
+AGND
+Text GLabel 10100 3250 0    50   Input ~ 0
+AGND
+Text GLabel 10100 3450 0    50   Input ~ 0
+AGND
+Text GLabel 10100 3650 0    50   Input ~ 0
+AGND
+NoConn ~ 10100 3950
+Text GLabel 10100 4250 0    50   Input ~ 0
+AGND
+Text GLabel 10100 4150 0    50   Input ~ 0
+AGND
+Text GLabel 10100 4050 0    50   Input ~ 0
+AGND
+Text GLabel 10100 2550 0    50   Input ~ 0
+CH1
+Text GLabel 10100 2750 0    50   Input ~ 0
+CH2
+Text GLabel 10100 2950 0    50   Input ~ 0
+CH3
+Text GLabel 10100 3150 0    50   Input ~ 0
+CH4
+Text GLabel 10100 3350 0    50   Input ~ 0
+CH5
+Text GLabel 10100 3550 0    50   Input ~ 0
+CH6
+Text GLabel 10100 3750 0    50   Input ~ 0
+CH7
+Text GLabel 10100 3850 0    50   Input ~ 0
+AGND
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:20PIN_HEADER U?
+U 1 1 60385395
+P 9400 3350
+F 0 "U?" V 9491 3172 50  0000 R CNN
+F 1 "PINS 21 - 40 DAQ" V 10550 3650 50  0000 R CNN
+F 2 "" H 8850 3300 50  0001 C CNN
+F 3 "" H 8850 3300 50  0001 C CNN
+	1    9400 3350
+	0    1    -1   0   
+$EndComp
+Text GLabel 9450 4150 2    50   Input ~ 0
+DGND
+Text GLabel 9450 3950 2    50   Input ~ 0
+DGND
+Text GLabel 9450 3750 2    50   Input ~ 0
+DGND
+Text GLabel 9450 3550 2    50   Input ~ 0
+DGND
+Text GLabel 9450 3350 2    50   Input ~ 0
+DGND
+Text GLabel 9450 3150 2    50   Input ~ 0
+DGND
+Text GLabel 9450 2950 2    50   Input ~ 0
+DGND
+Text GLabel 9450 2450 2    50   Input ~ 0
+5V_IN
+Text GLabel 9450 2350 2    50   Input ~ 0
+DGND
+NoConn ~ 9450 2550
+NoConn ~ 9450 2650
+NoConn ~ 9450 2750
+NoConn ~ 9450 2850
+NoConn ~ 9450 3050
+NoConn ~ 9450 3250
+NoConn ~ 9450 3450
+NoConn ~ 9450 3650
+NoConn ~ 9450 3850
+NoConn ~ 9450 4050
+NoConn ~ 9450 4250
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B6B-XH-A_LF__SN_ U?
+U 1 1 6038FD93
+P 8350 2650
+F 0 "U?" V 8391 2522 50  0000 R CNN
+F 1 "AD8232 6PIN" V 8300 2522 50  0000 R CNN
+F 2 "" H 8300 2650 50  0001 C CNN
+F 3 "" H 8300 2650 50  0001 C CNN
+	1    8350 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B3B-PH-K-S_LF__SN_ U?
+U 1 1 603966E1
+P 8400 3350
+F 0 "U?" V 8541 3272 50  0000 R CNN
+F 1 "AD2832 3PIN" V 8450 3272 50  0000 R CNN
+F 2 "digikey-footprints:PinHeader_1x3_P2mm_Drill1mm" H 8600 3550 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 8600 3650 60  0001 L CNN
+F 4 "455-1705-ND" H 8600 3750 60  0001 L CNN "Digi-Key_PN"
+F 5 "B3B-PH-K-S(LF)(SN)" H 8600 3850 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 8600 3950 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 8600 4050 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 8600 4150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B3B-PH-K-S(LF)(SN)/455-1705-ND/926612" H 8600 4250 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 3POS 2MM" H 8600 4350 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 8600 4450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8600 4550 60  0001 L CNN "Status"
+	1    8400 3350
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 8250 2350
+NoConn ~ 8250 2450
+NoConn ~ 8250 2550
+$EndSCHEMATC

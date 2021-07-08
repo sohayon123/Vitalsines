@@ -1,0 +1,164 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Sensor_Data_Aggregation_Board-rescue_15PIN_HEADER-dk_Rectangular-Connectors-Headers-Male-Pins
+#
+DEF Sensor_Data_Aggregation_Board-rescue_15PIN_HEADER-dk_Rectangular-Connectors-Headers-Male-Pins U 0 40 Y Y 1 F N
+F0 "U" 0 -200 50 H V C CNN
+F1 "Sensor_Data_Aggregation_Board-rescue_15PIN_HEADER-dk_Rectangular-Connectors-Headers-Male-Pins" 0 350 50 H V C CNN
+F2 "" 250 -50 50 H I C CNN
+F3 "" 250 -50 50 H I C CNN
+DRAW
+S -750 -50 750 -150 1 1 0 f
+S -710 -95 -690 -115 1 1 0 F
+S -610 -95 -590 -115 1 1 0 F
+S -510 -95 -490 -115 1 1 0 F
+S -410 -95 -390 -115 1 1 0 F
+S -310 -95 -290 -115 1 1 0 F
+S -210 -95 -190 -115 1 1 0 F
+S -110 -95 -90 -115 1 1 0 F
+S -10 -95 10 -115 1 1 0 F
+S 90 -95 110 -115 1 1 0 F
+S 190 -95 210 -115 1 1 0 F
+S 290 -95 310 -115 1 1 0 F
+S 390 -95 410 -115 1 1 0 F
+S 490 -95 510 -115 1 1 0 F
+S 590 -95 610 -115 1 1 0 F
+S 690 -95 710 -115 1 1 0 F
+X ~ 1 -700 50 100 D 50 50 1 1 P
+X ~ 10 200 50 100 D 50 50 1 1 P
+X ~ 11 300 50 100 D 50 50 1 1 P
+X ~ 12 400 50 100 D 50 50 1 1 P
+X ~ 13 500 50 100 D 50 50 1 1 P
+X ~ 14 600 50 100 D 50 50 1 1 P
+X ~ 15 700 50 100 D 50 50 1 1 P
+X ~ 2 -600 50 100 D 50 50 1 1 P
+X ~ 3 -500 50 100 D 50 50 1 1 P
+X ~ 4 -400 50 100 D 50 50 1 1 P
+X ~ 5 -300 50 100 D 50 50 1 1 P
+X ~ 6 -200 50 100 D 50 50 1 1 P
+X ~ 7 -100 50 100 D 50 50 1 1 P
+X ~ 8 0 50 100 D 50 50 1 1 P
+X ~ 9 100 50 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Rectangular-Connectors-Headers-Male-Pins_22-23-2021
+#
+DEF dk_Rectangular-Connectors-Headers-Male-Pins_22-23-2021 J 0 40 Y Y 1 F N
+F0 "J" -100 50 50 H V R CNN
+F1 "dk_Rectangular-Connectors-Headers-Male-Pins_22-23-2021" 50 -150 50 H V C CNN
+F2 "digikey-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" 200 200 60 H I L CNN
+F3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" 200 300 60 H I L CNN
+F4 "WM4200-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "22-23-2021" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Rectangular Connectors - Headers, Male Pins" 200 700 60 H I L CNN "Family"
+F8 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/molex/22-23-2021/WM4200-ND/26667" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN HEADER VERT 2POS 2.54MM" 200 1000 60 H I L CNN "Description"
+F11 "Molex" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -50 0 150 -100 1 1 0 f
+S -10 -45 10 -65 1 1 0 F
+S 90 -45 110 -65 1 1 0 F
+X ~ 1 0 100 100 D 50 50 1 1 P
+X ~ 2 100 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Rectangular-Connectors-Headers-Male-Pins_640456-3
+#
+DEF dk_Rectangular-Connectors-Headers-Male-Pins_640456-3 J 0 40 Y Y 1 F N
+F0 "J" -100 50 50 H V R CNN
+F1 "dk_Rectangular-Connectors-Headers-Male-Pins_640456-3" 100 -150 50 H V C CNN
+F2 "digikey-footprints:PinHeader_1x3_P2.54_Drill1.1mm" 200 200 60 H I L CNN
+F3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" 200 300 60 H I L CNN
+F4 "A19470-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "640456-3" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Rectangular Connectors - Headers, Male Pins" 200 700 60 H I L CNN "Family"
+F8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/te-connectivity-amp-connectors/640456-3/A19470-ND/259010" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN HEADER VERT 3POS 2.54MM" 200 1000 60 H I L CNN "Description"
+F11 "TE Connectivity AMP Connectors" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -50 0 250 -100 1 1 0 f
+S -10 -45 10 -65 1 1 0 F
+S 90 -45 110 -65 1 1 0 F
+S 190 -45 210 -65 1 1 0 F
+X ~ 1 0 100 100 D 50 50 1 1 P
+X ~ 2 100 100 100 D 50 50 1 1 P
+X ~ 3 200 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Rectangular-Connectors-Headers-Male-Pins_B4B-PH-K-S_LF__SN_
+#
+DEF dk_Rectangular-Connectors-Headers-Male-Pins_B4B-PH-K-S_LF__SN_ J 0 40 Y Y 1 F N
+F0 "J" -100 -50 50 H V R CNN
+F1 "dk_Rectangular-Connectors-Headers-Male-Pins_B4B-PH-K-S_LF__SN_" 150 -150 50 H V C CNN
+F2 "digikey-footprints:PinHeader_1x4_P2mm_Drill1mm" 200 200 60 H I L CNN
+F3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" 200 300 60 H I L CNN
+F4 "455-1706-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "B4B-PH-K-S(LF)(SN)" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Rectangular Connectors - Headers, Male Pins" 200 700 60 H I L CNN "Family"
+F8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/jst-sales-america-inc/B4B-PH-K-S(LF)(SN)/455-1706-ND/926613" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN HEADER VERT 4POS 2MM" 200 1000 60 H I L CNN "Description"
+F11 "JST Sales America Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -50 0 350 -100 1 1 0 f
+S -10 -45 10 -65 1 1 0 F
+S 90 -45 110 -65 1 1 0 F
+S 190 -45 210 -65 1 1 0 F
+S 290 -45 310 -65 1 1 0 F
+X ~ 1 0 100 100 D 50 50 1 1 P
+X ~ 2 100 100 100 D 50 50 1 1 P
+X ~ 3 200 100 100 D 50 50 1 1 P
+X ~ 4 300 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Rectangular-Connectors-Headers-Male-Pins_B6B-XH-A_LF__SN_
+#
+DEF dk_Rectangular-Connectors-Headers-Male-Pins_B6B-XH-A_LF__SN_ U 0 40 Y Y 1 F N
+F0 "U" 0 -200 50 H V C CNN
+F1 "dk_Rectangular-Connectors-Headers-Male-Pins_B6B-XH-A_LF__SN_" 0 400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 300 0 -300 -100 0 1 0 f
+S -260 -45 -240 -65 1 1 0 F
+S -160 -45 -140 -65 1 1 0 F
+S -60 -45 -40 -65 1 1 0 F
+S 40 -45 60 -65 1 1 0 F
+S 140 -45 160 -65 1 1 0 F
+S 240 -45 260 -65 1 1 0 F
+X ~ 1 -250 100 100 D 50 50 1 1 P
+X ~ 2 -150 100 100 D 50 50 1 1 P
+X ~ 3 -50 100 100 D 50 50 1 1 P
+X ~ 4 50 100 100 D 50 50 1 1 P
+X ~ 5 150 100 100 D 50 50 1 1 P
+X ~ 6 250 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

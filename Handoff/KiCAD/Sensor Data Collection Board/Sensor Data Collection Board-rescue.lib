@@ -1,0 +1,46 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 15PIN_HEADER-dk_Rectangular-Connectors-Headers-Male-Pins
+#
+DEF 15PIN_HEADER-dk_Rectangular-Connectors-Headers-Male-Pins U 0 40 Y Y 1 F N
+F0 "U" 0 -200 50 H V C CNN
+F1 "15PIN_HEADER-dk_Rectangular-Connectors-Headers-Male-Pins" 0 350 50 H V C CNN
+F2 "" 250 -50 50 H I C CNN
+F3 "" 250 -50 50 H I C CNN
+DRAW
+S -750 -50 750 -150 1 1 0 f
+S -710 -95 -690 -115 1 1 0 F
+S -610 -95 -590 -115 1 1 0 F
+S -510 -95 -490 -115 1 1 0 F
+S -410 -95 -390 -115 1 1 0 F
+S -310 -95 -290 -115 1 1 0 F
+S -210 -95 -190 -115 1 1 0 F
+S -110 -95 -90 -115 1 1 0 F
+S -10 -95 10 -115 1 1 0 F
+S 90 -95 110 -115 1 1 0 F
+S 190 -95 210 -115 1 1 0 F
+S 290 -95 310 -115 1 1 0 F
+S 390 -95 410 -115 1 1 0 F
+S 490 -95 510 -115 1 1 0 F
+S 590 -95 610 -115 1 1 0 F
+S 690 -95 710 -115 1 1 0 F
+X ~ 1 -700 50 100 D 50 50 1 1 P
+X ~ 10 200 50 100 D 50 50 1 1 P
+X ~ 11 300 50 100 D 50 50 1 1 P
+X ~ 12 400 50 100 D 50 50 1 1 P
+X ~ 13 500 50 100 D 50 50 1 1 P
+X ~ 14 600 50 100 D 50 50 1 1 P
+X ~ 15 700 50 100 D 50 50 1 1 P
+X ~ 2 -600 50 100 D 50 50 1 1 P
+X ~ 3 -500 50 100 D 50 50 1 1 P
+X ~ 4 -400 50 100 D 50 50 1 1 P
+X ~ 5 -300 50 100 D 50 50 1 1 P
+X ~ 6 -200 50 100 D 50 50 1 1 P
+X ~ 7 -100 50 100 D 50 50 1 1 P
+X ~ 8 0 50 100 D 50 50 1 1 P
+X ~ 9 100 50 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

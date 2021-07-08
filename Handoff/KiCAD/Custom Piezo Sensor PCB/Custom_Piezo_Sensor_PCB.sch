@@ -1,0 +1,522 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Custom Piezo"
+Date "2021-01-29"
+Rev ""
+Comp "VitalSines"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LMC6062 U1
+U 1 1 6014A6DF
+P 4450 2800
+F 0 "U1" H 4450 3167 50  0000 C CNN
+F 1 "LMC6062" H 4450 3076 50  0000 C CNN
+F 2 "Custom_Piezo:LMC6062IMX" H 4450 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6062.pdf" H 4450 2800 50  0001 C CNN
+	1    4450 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 6015342B
+P 4400 2400
+F 0 "C2" V 4148 2400 50  0000 C CNN
+F 1 "360pF" V 4239 2400 50  0000 C CNN
+F 2 "digikey-footprints:0603" H 4438 2250 50  0001 C CNN
+F 3 "~" H 4400 2400 50  0001 C CNN
+	1    4400 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60155ADC
+P 4050 1950
+F 0 "C1" V 3798 1950 50  0000 C CNN
+F 1 "47nF" V 3889 1950 50  0000 C CNN
+F 2 "digikey-footprints:0603" H 4088 1800 50  0001 C CNN
+F 3 "~" H 4050 1950 50  0001 C CNN
+	1    4050 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6015CCBF
+P 4400 1500
+F 0 "R3" V 4193 1500 50  0000 C CNN
+F 1 "22M" V 4284 1500 50  0000 C CNN
+F 2 "digikey-footprints:0603" V 4330 1500 50  0001 C CNN
+F 3 "~" H 4400 1500 50  0001 C CNN
+	1    4400 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 6015EF26
+P 6050 2800
+F 0 "R4" V 5843 2800 50  0000 C CNN
+F 1 "10k" V 5934 2800 50  0000 C CNN
+F 2 "digikey-footprints:0603" V 5980 2800 50  0001 C CNN
+F 3 "~" H 6050 2800 50  0001 C CNN
+	1    6050 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 3000 6950 3000
+Wire Wire Line
+	6850 2800 6850 2300
+Wire Wire Line
+	6850 2800 7100 2800
+$Comp
+L Device:C C5
+U 1 1 60182EB2
+P 7300 2300
+F 0 "C5" V 7048 2300 50  0000 C CNN
+F 1 "20pF" V 7139 2300 50  0000 C CNN
+F 2 "digikey-footprints:0603" H 7338 2150 50  0001 C CNN
+F 3 "~" H 7300 2300 50  0001 C CNN
+	1    7300 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 2300 7700 2300
+Wire Wire Line
+	7150 2300 6850 2300
+Wire Wire Line
+	7700 2900 7950 2900
+$Comp
+L Device:R R6
+U 1 1 60184C08
+P 8100 2900
+F 0 "R6" V 7893 2900 50  0000 C CNN
+F 1 "20R" V 7984 2900 50  0000 C CNN
+F 2 "digikey-footprints:0603" V 8030 2900 50  0001 C CNN
+F 3 "~" H 8100 2900 50  0001 C CNN
+	1    8100 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 2900 8500 2900
+Wire Wire Line
+	8500 2900 8500 1850
+$Comp
+L Device:R R5
+U 1 1 60185981
+P 8150 1850
+F 0 "R5" V 7943 1850 50  0000 C CNN
+F 1 "10k" V 8034 1850 50  0000 C CNN
+F 2 "digikey-footprints:0603" V 8080 1850 50  0001 C CNN
+F 3 "~" H 8150 1850 50  0001 C CNN
+	1    8150 1850
+	0    1    1    0   
+$EndComp
+Connection ~ 6850 2300
+Wire Wire Line
+	8500 2900 9100 2900
+Connection ~ 8500 2900
+$Comp
+L Device:R R7
+U 1 1 6018C4EB
+P 9100 2150
+F 0 "R7" V 8893 2150 50  0000 C CNN
+F 1 "1M" V 8984 2150 50  0000 C CNN
+F 2 "digikey-footprints:0603" V 9030 2150 50  0001 C CNN
+F 3 "~" H 9100 2150 50  0001 C CNN
+	1    9100 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9100 2300 9100 2900
+Wire Wire Line
+	9100 2000 9100 1600
+$Comp
+L power:+10V #PWR0101
+U 1 1 60190DEE
+P 9100 1600
+F 0 "#PWR0101" H 9100 1450 50  0001 C CNN
+F 1 "+10V" H 9115 1773 50  0000 C CNN
+F 2 "" H 9100 1600 50  0001 C CNN
+F 3 "" H 9100 1600 50  0001 C CNN
+	1    9100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW1
+U 1 1 60199BEB
+P 4850 1950
+F 0 "SW1" H 4850 2217 50  0000 C CNN
+F 1 "SW_DIP_x01" H 4850 2126 50  0000 C CNN
+F 2 "Custom_Piezo:EDS01SGNNTR04Q" H 4850 1950 50  0001 C CNN
+F 3 "~" H 4850 1950 50  0001 C CNN
+	1    4850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LMC6062 U1
+U 2 1 6019B8DE
+P 7400 2900
+F 0 "U1" H 7400 2533 50  0000 C CNN
+F 1 "LMC6062" H 7400 2624 50  0000 C CNN
+F 2 "Custom_Piezo:LMC6062IMX" H 7400 2900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6062.pdf" H 7400 2900 50  0001 C CNN
+	2    7400 2900
+	1    0    0    1   
+$EndComp
+Connection ~ 7700 2900
+Wire Wire Line
+	7700 2300 7700 2900
+$Comp
+L Amplifier_Operational:LMC6062 U1
+U 3 1 6019CAF8
+P 8000 5000
+F 0 "U1" H 7958 5046 50  0000 L CNN
+F 1 "LMC6062" H 7958 4955 50  0000 L CNN
+F 2 "Custom_Piezo:LMC6062IMX" H 8000 5000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6062.pdf" H 8000 5000 50  0001 C CNN
+	3    8000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 601A6C87
+P 7900 5300
+F 0 "#PWR0102" H 7900 5050 50  0001 C CNN
+F 1 "GND" H 7905 5127 50  0000 C CNN
+F 2 "" H 7900 5300 50  0001 C CNN
+F 3 "" H 7900 5300 50  0001 C CNN
+	1    7900 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR0103
+U 1 1 601A7600
+P 7900 4700
+F 0 "#PWR0103" H 7900 4550 50  0001 C CNN
+F 1 "+10V" H 7915 4873 50  0000 C CNN
+F 2 "" H 7900 4700 50  0001 C CNN
+F 3 "" H 7900 4700 50  0001 C CNN
+	1    7900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 601A7F45
+P 7500 5000
+F 0 "C6" V 7248 5000 50  0000 C CNN
+F 1 "0.1uF" V 7339 5000 50  0000 C CNN
+F 2 "digikey-footprints:0603" H 7538 4850 50  0001 C CNN
+F 3 "~" H 7500 5000 50  0001 C CNN
+	1    7500 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4850 7500 4700
+Wire Wire Line
+	7500 4700 7900 4700
+Connection ~ 7900 4700
+Wire Wire Line
+	7500 5150 7500 5300
+Wire Wire Line
+	7500 5300 7900 5300
+Connection ~ 7900 5300
+$Comp
+L power:+10V #PWR0104
+U 1 1 601AB725
+P 4100 4550
+F 0 "#PWR0104" H 4100 4400 50  0001 C CNN
+F 1 "+10V" H 4115 4723 50  0000 C CNN
+F 2 "" H 4100 4550 50  0001 C CNN
+F 3 "" H 4100 4550 50  0001 C CNN
+	1    4100 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 601ABB1E
+P 4100 4700
+F 0 "R2" V 3893 4700 50  0000 C CNN
+F 1 "3K9" V 3984 4700 50  0000 C CNN
+F 2 "digikey-footprints:0603" V 4030 4700 50  0001 C CNN
+F 3 "~" H 4100 4700 50  0001 C CNN
+	1    4100 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 601B3E03
+P 4100 5000
+F 0 "D1" V 4139 4882 50  0000 R CNN
+F 1 "LED" V 4048 4882 50  0000 R CNN
+F 2 "digikey-footprints:0603" H 4100 5000 50  0001 C CNN
+F 3 "~" H 4100 5000 50  0001 C CNN
+	1    4100 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 601B4791
+P 4100 5150
+F 0 "#PWR0105" H 4100 4900 50  0001 C CNN
+F 1 "GND" H 4105 4977 50  0000 C CNN
+F 2 "" H 4100 5150 50  0001 C CNN
+F 3 "" H 4100 5150 50  0001 C CNN
+	1    4100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR0106
+U 1 1 601B5064
+P 5300 4850
+F 0 "#PWR0106" H 5300 4700 50  0001 C CNN
+F 1 "+10V" H 5315 5023 50  0000 C CNN
+F 2 "" H 5300 4850 50  0001 C CNN
+F 3 "" H 5300 4850 50  0001 C CNN
+	1    5300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 601B56EC
+P 5300 5000
+F 0 "C3" V 5048 5000 50  0000 C CNN
+F 1 "10uF" V 5139 5000 50  0000 C CNN
+F 2 "digikey-footprints:0603" H 5338 4850 50  0001 C CNN
+F 3 "~" H 5300 5000 50  0001 C CNN
+	1    5300 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 601B5C76
+P 6400 5000
+F 0 "C4" V 6148 5000 50  0000 C CNN
+F 1 "10uF" V 6239 5000 50  0000 C CNN
+F 2 "digikey-footprints:0603" H 6438 4850 50  0001 C CNN
+F 3 "~" H 6400 5000 50  0001 C CNN
+	1    6400 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 601B62F6
+P 5300 5150
+F 0 "#PWR0107" H 5300 4900 50  0001 C CNN
+F 1 "GND" H 5305 4977 50  0000 C CNN
+F 2 "" H 5300 5150 50  0001 C CNN
+F 3 "" H 5300 5150 50  0001 C CNN
+	1    5300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 601B65F5
+P 6400 5150
+F 0 "#PWR0108" H 6400 4900 50  0001 C CNN
+F 1 "GND" H 6405 4977 50  0000 C CNN
+F 2 "" H 6400 5150 50  0001 C CNN
+F 3 "" H 6400 5150 50  0001 C CNN
+	1    6400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 601BA4A2
+P 6400 4850
+F 0 "#PWR0109" H 6400 4700 50  0001 C CNN
+F 1 "+5V" H 6415 5023 50  0000 C CNN
+F 2 "" H 6400 4850 50  0001 C CNN
+F 3 "" H 6400 4850 50  0001 C CNN
+	1    6400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:S2B-PH-SM4-TB_LF__SN_ J1
+U 1 1 601A0774
+P 1900 2700
+F 0 "J1" V 1675 2708 50  0000 C CNN
+F 1 "PIEZO_INPUT" V 1766 2708 50  0000 C CNN
+F 2 "Custom_Piezo:SM02B-SRSS-TB" H 2100 2900 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 2100 3000 60  0001 L CNN
+F 4 "455-1749-1-ND" H 2100 3100 60  0001 L CNN "Digi-Key_PN"
+F 5 "S2B-PH-SM4-TB(LF)(SN)" H 2100 3200 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 2100 3300 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 2100 3400 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 2100 3500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/S2B-PH-SM4-TB(LF)(SN)/455-1749-1-ND/926846" H 2100 3600 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER SMD R/A 2POS 2MM" H 2100 3700 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 2100 3800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2100 3900 60  0001 L CNN "Status"
+	1    1900 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 2800 2000 2900
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-PH-K-S_LF__SN_ J2
+U 1 1 601A9BB3
+P 9550 3100
+F 0 "J2" V 9741 2972 50  0000 R CNN
+F 1 "PCB_TO_JACK" V 9650 2972 50  0000 R CNN
+F 2 "Custom_Piezo:SM04B-SRSS-TB" H 9750 3300 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 9750 3400 60  0001 L CNN
+F 4 "455-1706-ND" H 9750 3500 60  0001 L CNN "Digi-Key_PN"
+F 5 "B4B-PH-K-S(LF)(SN)" H 9750 3600 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 9750 3700 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 9750 3800 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 9750 3900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B4B-PH-K-S(LF)(SN)/455-1706-ND/926613" H 9750 4000 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 4POS 2MM" H 9750 4100 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 9750 4200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9750 4300 60  0001 L CNN "Status"
+	1    9550 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 601ABE58
+P 9450 2800
+F 0 "#PWR0110" H 9450 2550 50  0001 C CNN
+F 1 "GND" V 9455 2672 50  0000 R CNN
+F 2 "" H 9450 2800 50  0001 C CNN
+F 3 "" H 9450 2800 50  0001 C CNN
+	1    9450 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 601ACA54
+P 9450 3000
+F 0 "#PWR0111" H 9450 2850 50  0001 C CNN
+F 1 "+5V" V 9465 3128 50  0000 L CNN
+F 2 "" H 9450 3000 50  0001 C CNN
+F 3 "" H 9450 3000 50  0001 C CNN
+	1    9450 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+10V #PWR0112
+U 1 1 601AD50F
+P 9450 3100
+F 0 "#PWR0112" H 9450 2950 50  0001 C CNN
+F 1 "+10V" V 9465 3228 50  0000 L CNN
+F 2 "" H 9450 3100 50  0001 C CNN
+F 3 "" H 9450 3100 50  0001 C CNN
+	1    9450 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9100 2900 9450 2900
+Connection ~ 9100 2900
+Wire Wire Line
+	2000 2900 2150 2900
+$Comp
+L power:+5V #PWR0113
+U 1 1 60190322
+P 2150 3350
+F 0 "#PWR0113" H 2150 3200 50  0001 C CNN
+F 1 "+5V" H 2165 3523 50  0000 C CNN
+F 2 "" H 2150 3350 50  0001 C CNN
+F 3 "" H 2150 3350 50  0001 C CNN
+	1    2150 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 601466F8
+P 2900 2700
+F 0 "R1" V 2693 2700 50  0000 C CNN
+F 1 "1M" V 2784 2700 50  0000 C CNN
+F 2 "digikey-footprints:0603" V 2830 2700 50  0001 C CNN
+F 3 "~" H 2900 2700 50  0001 C CNN
+	1    2900 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 2700 2000 2700
+Wire Wire Line
+	4150 2900 2150 2900
+Connection ~ 2150 2900
+Wire Wire Line
+	3050 2700 3650 2700
+Connection ~ 3650 2700
+Wire Wire Line
+	3650 2700 4150 2700
+Wire Wire Line
+	2150 2900 2150 3300
+Wire Wire Line
+	6200 2800 6850 2800
+Connection ~ 6850 2800
+Wire Wire Line
+	4750 2800 5200 2800
+Connection ~ 5200 2800
+Wire Wire Line
+	5200 2800 5900 2800
+Wire Wire Line
+	6950 3300 2150 3300
+Wire Wire Line
+	6950 3000 6950 3300
+Connection ~ 2150 3300
+Wire Wire Line
+	2150 3300 2150 3350
+Wire Wire Line
+	4550 2400 5200 2400
+Connection ~ 5200 2400
+Wire Wire Line
+	5200 2400 5200 2800
+Wire Wire Line
+	4250 2400 3650 2400
+Connection ~ 3650 2400
+Wire Wire Line
+	3650 2400 3650 2700
+Wire Wire Line
+	5200 1500 5200 1950
+Connection ~ 5200 1950
+Wire Wire Line
+	5200 1950 5200 2400
+Wire Wire Line
+	3650 1500 3650 1950
+Wire Wire Line
+	3900 1950 3650 1950
+Connection ~ 3650 1950
+Wire Wire Line
+	3650 1950 3650 2400
+Wire Wire Line
+	4550 1500 5200 1500
+Wire Wire Line
+	4250 1500 3650 1500
+Wire Wire Line
+	5200 1950 5150 1950
+Wire Wire Line
+	4550 1950 4200 1950
+$Comp
+L Custom_Piezo-rescue:3361P-1-104GLF-3361P-1-104GLF VR1
+U 1 1 6027A299
+P 7350 1850
+F 0 "VR1" H 7200 2050 50  0000 C CNN
+F 1 "1M" H 7200 1950 50  0000 C CNN
+F 2 "Custom_Piezo:3314G-1-105E" H 7350 1850 50  0001 L BNN
+F 3 "" H 7350 1850 50  0001 L BNN
+F 4 "5.84mm" H 7350 1850 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "08/19" H 7350 1850 50  0001 L BNN "PARTREV"
+F 6 "Bourns" H 7350 1850 50  0001 L BNN "MANUFACTURER"
+F 7 "Manufacturer Recommendations" H 7350 1850 50  0001 L BNN "STANDARD"
+	1    7350 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 1850 8300 1850
+Wire Wire Line
+	6850 1850 7050 1850
+Wire Wire Line
+	6850 1850 6850 2300
+Wire Wire Line
+	7650 1850 8000 1850
+NoConn ~ 7350 1650
+$EndSCHEMATC
